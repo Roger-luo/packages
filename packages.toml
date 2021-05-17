@@ -39,15 +39,75 @@ doc=false
 description="Standard basic quantum circuit simulator building blocks."
 
 [[project.packages]]
+name="YaoSym"
+user="QuantumBFS"
+doc=false
+description="Symbolic Computation Extension for Yao."
+
+[[project.packages]]
+name="LuxurySparse"
+user="QuantumBFS"
+doc=false
+description="A luxury sparse matrix package for Julia."
+
+[[project.packages]]
+name="BitBasis"
+user="QuantumBFS"
+description="Types and operations for basis represented by bits in linear algebra."
+
+[[project.packages]]
+name="YaoLang"
+user="QuantumBFS"
+description="The next eDSL for Yao and quantum programs in Julia."
+
+[[project.packages]]
 name="YaoCompiler"
 user="QuantumBFS"
 description="Unleash Julia on quantum devices."
+
+[[project.packages]]
+name="BQCESubroutine"
+user="QuantumBFS"
+description="Basic Quantum Circuit Emulation Subroutine."
 
 [[project.packages]]
 name="YaoHIR"
 user="QuantumBFS"
 doc=false
 description="High Level IR for YaoCompiler in native Julia."
+
+[[project.packages]]
+name="YaoLocations"
+user="QuantumBFS"
+doc=false
+description="Wire location types for quantum circuit."
+
+[[project.packages]]
+name="YaoTargetQASM"
+user="QuantumBFS"
+doc=false
+description="the QASM compilation target, includes QASM frontend and backend."
+
+[[project.packages]]
+name="YaoTargetQobj"
+user="QuantumBFS"
+doc=false
+description="the Qobj compilation target, includes IBM Q frontend and backend."
+
+[[project.packages]]
+name="ZXCalculus"
+user="QuantumBFS"
+description="An implementation of ZX calculus in native Julia."
+
+[[project.packages]]
+name="OpenQASM"
+user="QuantumBFS"
+description="The OpenQASM parser in native Julia."
+
+[[project.packages]]
+name="IBMQClient"
+user="QuantumBFS"
+description="The non-official IBM Quantum Experience REST API wrapper in native Julia."
 
 [[project]]
 name="Comonicon"
@@ -87,6 +147,35 @@ name="ExproniconLite"
 description="no fancy pattern matching, no dependencies, lightweight Expronicon for low latency."
 
 [[project]]
+name="CompilerPluginTools"
+user="JuliaCompilerPlugins"
+description="collective tools for Julia SSA IR."
+
+[[project]]
 name="Configurations"
 page="configurations.rogerluo.dev"
 description="Options & Configurations made easy."
+
+[[project]]
+name="Ion"
+description="The Ion project aims to provide a fluent terminal-base workflow for Julia."
+
+[[project.packages]]
+name="IonCLI"
+description="The Ion CLI for Julia."
+
+[[project.packages]]
+name="IonBase"
+description="Base package for the Ion project."
+
+[[project]]
+name="FromFile"
+description="""
+This package exports a macro @from, which can be used to import objects from files.
+The hope is that you will never have to write include again.
+"""
+
+[[project]]
+name="DocThemeIndigo"
+user="JuliaDiff"
+description="The Indigo theme for Documenter."
