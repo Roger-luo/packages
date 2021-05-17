@@ -1,0 +1,53 @@
+[[project]]
+name="QuantumBFS"
+description="""
+QuantumBFS is a github organization hosts the Yao project.
+The Yao project aims to build a framework for programming
+quantum devices in Julia.
+"""
+
+[[project.packages]]
+name="Yao"
+description=""
+
+[[project.packages]]
+name="YaoArrayRegister"
+description=""
+
+[[project.packages]]
+name="YaoBase"
+description=""
+
+[[project.packages]]
+name="YaoAPI"
+description=""
+
+[[project.packages]]
+name="YaoBlocks"
+description=""
+
+[[project.packages]]
+name="YaoCompiler"
+description=""
+
+[[project]]
+name="Comonicon"
+description="""
+Comonicon is a CLI (Command Line Interface) generator written in Julia and
+for Julia that aims to provide a fast, intuitive CLI generator for humans.
+"""
+
+[[project.packages]]
+name="Comonicon"
+description="""
+"""
+
+[[project]]
+name="Expronicon"
+description="""
+"""
+
+[[project]]
+name="Configurations"
+description="""
+"""
