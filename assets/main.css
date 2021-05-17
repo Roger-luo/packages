@@ -53,6 +53,18 @@ html[data-theme='light'] {
     margin-bottom: 2em;
 }
 
+.intro a {
+    color: var(--color-strong);
+    margin-left: 0.1em;
+    font-weight: 350;
+    border: none;
+    text-decoration: none;   
+}
+
+.intro a:hover {
+    color: var(--color-hover);
+}
+
 .project {
     color: var(--color-strong);
     font-family: Roboto, sans-serif;
