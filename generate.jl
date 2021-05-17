@@ -209,6 +209,9 @@ $head
 </html>
 """
 
+ispath("page") || mkpath("page")
+cp("assets", joinpath("page", "assets"))
+
 open(joinpath("page", "index.html"), "w+") do io
     write(io, index)
 end
