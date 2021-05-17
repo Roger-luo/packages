@@ -7,10 +7,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
+    - uses: actions/checkout@v2
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
@@ -19,7 +16,5 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        SSH: true
         BRANCH: gh-pages
         FOLDER: page
-        CLEAN: true
