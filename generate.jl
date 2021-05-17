@@ -208,8 +208,13 @@ $head
 </html>
 """
 
-ispath("page") || mkpath("page")
-cp("assets", joinpath("page", "assets"))
+if ispath("page")
+    rm("page"; force=true, recursive=true)
+else
+    mkpath("page")
+end
+
+cp("assets", joinpath("page", "assets"); force=true)
 
 open(joinpath("page", "index.html"), "w+") do io
     write(io, index)
