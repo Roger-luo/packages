@@ -212,6 +212,7 @@ if ispath("page")
     rm("page"; force=true, recursive=true)
 else
     mkpath("page")
+    mkpath(joinpath("page", "assets"))
 end
 
 cp("assets", joinpath("page", "assets"); force=true)
