@@ -12,6 +12,7 @@ jobs:
       uses: julia-actions/setup-julia@v1
       with:
         version: '1'
+    - run: julia --project -e 'using Pkg; Pkg.instantiate()'
     - run: julia --project generate.jl
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
