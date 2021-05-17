@@ -124,6 +124,7 @@ description="The main package of this project."
 [[project.packages]]
 name="ComoniconTypes"
 description="Comonicon's Intermediate Representation for CLIs."
+codecov_token="g0FlmB4YLj"
 
 [[project.packages]]
 name="ComoniconTargetExpr"

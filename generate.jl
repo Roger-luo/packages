@@ -82,6 +82,7 @@ theme_script = """
     description::String
     doc::Bool = true # has doc
     codecov::Bool = true # has codecov
+    codecov_token::Maybe{String} = nothing
     gh_action::Bool = true # has github action
     user::String = "Roger-luo" # github user
 end
@@ -101,9 +102,9 @@ end
 repo_link(user, name) = "https://github.com/$(user)/$(name).jl"
 page_link(user, name) = "https://$(user).github.io/$(name).jl"
 
-package_badges(pkg::Package) = package_badges(pkg.user, pkg.name, pkg.doc, pkg.gh_action, pkg.codecov)
+package_badges(pkg::Package) = package_badges(pkg.user, pkg.name, pkg.doc, pkg.gh_action, pkg.codecov, pkg.codecov_token)
 
-function package_badges(user, name, doc::Bool, gh_action::Bool, codecov::Bool)
+function package_badges(user, name, doc::Bool, gh_action::Bool, codecov::Bool, codecov_token)
     repo = repo_link(user, name)
     page = page_link(user, name)
     stable_link = "$page/stable"
@@ -115,6 +116,9 @@ function package_badges(user, name, doc::Bool, gh_action::Bool, codecov::Bool)
     dev_img = "https://img.shields.io/badge/docs-dev-blue.svg"
     gha_img = "$repo/workflows/CI/badge.svg"
     codecov_img = "https://codecov.io/gh/$(user)/$(name).jl/branch/master/graph/badge.svg"
+    if !isnothing(codecov_token)
+        codecov_img *= "?token=g0FlmB4YLj"
+    end
 
     badge(img, link, alt) = """
     <a href="$link">
@@ -165,7 +169,7 @@ function html(project::Project)
             $name
             $page
             <div class="pkg-badges">
-                $(package_badges(user, project.name, true, true, true))
+                $(package_badges(user, project.name, true, true, true, nothing))
             </div>
             $description
         </div>
