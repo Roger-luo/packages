@@ -24,9 +24,26 @@ html[data-theme='light'] {
     background-color: var(--background-primary);
 }
 
-.container {
+.page-container {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.home {
+    margin-top: 4em;
+}
+
+.home a {
+    color: var(--color-primary);
+    margin-left: 0.1em;
+    font-size: 1.6em;
+    font-weight: 300;
+    border: none;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: var(--color-hover);
 }
 
 .intro {
@@ -43,133 +60,54 @@ html[data-theme='light'] {
 }
 
 .project h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .description {
     margin: 1em;
 }
 
-/* .header {
-    color: var(--color-primary);
-}
-
-.name {
-    margin-top: 1em;
-}
-
-.name-main {
-    color: var(--color-strong);
-    font-size: 2em;
-    font-family: Roboto, sans-serif;
-}
-
-.name-annotation {
-    color: var(--color-annotation);
-    font-size: 1.3em;
-    font-weight: 300;
-}
-
-.contact {
-    text-align: right;
-}
-
-.link{
-    color: var(--color-primary);
-    display: block;
-    border: none;
-    font-size: 1.1em;
-    font-weight: 300;
-    text-decoration: none;
-}
-
-.link:hover {
-    color: var(--color-hover);
-}
-
-.media li {
-    display: inline-block;
-    font-size: 2.4em;
-}
-
-.button {
-    color: var(--color-primary);
-    float: right;
-    display: block;
-    border: none;
-    position: relative;
-    margin: 0.3em;
-}
-
-.button:hover {
-    color: var(--color-hover);
-} */
-
-.intro-container {
-    color: var(--color-primary);
-    margin-top: 4em;
-}
-
-.intro a {
-    color: var(--color-annotation);
-    border: none;
-    text-decoration: none;
-}
-
-.intro a:hover {
-    color: var(--color-hover);
-}
-
-/* .profile {
-    margin-left: 2em;
-} */
-
-.profile-img {
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin: 0em;
-    margin-left: 4em;
-    margin-bottom: 20px;
-    border-radius: 100px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat, no-repeat;
-}
-
-.content-container {
-    margin-top: 3em;
-}
-
-.content-container h1{
-    color: var(--color-annotation);
-    font-size: 2em;
-    font-weight: 300;
-    text-align: center;
-    padding-bottom: 0.3em;
-    border-bottom: 2px dashed;
-}
-
-.institution {
-    color: var(--color-primary);
-    text-align: center;
-    margin-top: 1em;
-    border-bottom: none;
-}
-
-.institution-name{
-    font-size: 1.5em;
-    font-weight: 300;
-}
-
-.institution-program {
+.project-page {
     font-size: 1em;
     font-weight: 400;
 }
 
-.institution-period {
-    font-size: 1em;
-    font-weight: 200;   
+.project-page a {
+    color: var(--color-primary);
+    margin-left: 0.1em;
+    font-weight: 300;
+    border: none;
+    text-decoration: none;
+}
+
+.project-page a:hover {
+    color: var(--color-hover);
+}
+
+.pkg {
+    margin-top: 1em;
+}
+
+.pkg-name a {
+    color: var(--color-strong);
+    margin-left: 0.1em;
+    font-weight: 350;
+    border: none;
+    text-decoration: none;
+}
+
+.pkg-desc {
+    font-size: 0.9em;
+    color: var(--color-annotation);
+}
+
+.pkg-name a:hover {
+    color: var(--color-hover);
+}
+
+.pkg-badges a {
+    border: none;
+    text-decoration: none;
 }
 
 .footer-container {
@@ -187,52 +125,4 @@ html[data-theme='light'] {
 
 .footer-container a:hover {
     color: var(--color-hover);
-}
-
-@media only screen and (max-width: 400px) {
-    .name {
-        text-align: center;
-        margin-left: 0.5em;
-    }
-    
-    .name-main {
-        font-size: 1.5em;
-    }
-
-    .name-annotation {
-        font-size: 0.9em;
-    }
-
-    .media li {
-        font-size: 1.2em;
-    }
-
-    .link{
-        font-size: 0.7em;
-        text-align: center;
-    }
-
-    .hide-small-screen {
-        display: none;
-    }
-
-    .contact {
-        margin-top: 0.5em;
-        margin-bottom: 2em;
-        text-align: center;
-    }
-
-    .profile-img {
-        margin-left: 5em;
-    }
-
-    .intro {
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 400px) {
-    .hide-large-screen {
-        display: none;
-    }
 }

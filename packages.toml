@@ -1,5 +1,6 @@
 [[project]]
 name="QuantumBFS"
+page="yaoquantum.org"
 description="""
 QuantumBFS is a github organization hosts the Yao project.
 The Yao project aims to build a framework for programming
@@ -8,30 +9,49 @@ quantum devices in Julia.
 
 [[project.packages]]
 name="Yao"
-description=""
+user="QuantumBFS"
+description="Extensible, Efficient Quantum Algorithm Design for Humans."
 
 [[project.packages]]
 name="YaoArrayRegister"
-description=""
+user="QuantumBFS"
+doc=false
+description="Simulated Full Amplitude Quantum Register."
 
 [[project.packages]]
 name="YaoBase"
-description=""
+user="QuantumBFS"
+doc=false
+description="Abstract type and interface definition for quantum circuit blocks."
 
 [[project.packages]]
 name="YaoAPI"
-description=""
+user="QuantumBFS"
+doc=false
+gh_action=false
+codecov=false
+description="APIs in Yao, minimum package for Yao compatibility."
 
 [[project.packages]]
 name="YaoBlocks"
-description=""
+user="QuantumBFS"
+doc=false
+description="Standard basic quantum circuit simulator building blocks."
 
 [[project.packages]]
 name="YaoCompiler"
-description=""
+user="QuantumBFS"
+description="Unleash Julia on quantum devices."
+
+[[project.packages]]
+name="YaoHIR"
+user="QuantumBFS"
+doc=false
+description="High Level IR for YaoCompiler in native Julia."
 
 [[project]]
 name="Comonicon"
+page="comonicon.rogerluo.dev"
 description="""
 Comonicon is a CLI (Command Line Interface) generator written in Julia and
 for Julia that aims to provide a fast, intuitive CLI generator for humans.
@@ -39,15 +59,34 @@ for Julia that aims to provide a fast, intuitive CLI generator for humans.
 
 [[project.packages]]
 name="Comonicon"
-description="""
-"""
+description="The main package of this project."
+
+[[project.packages]]
+name="ComoniconTypes"
+description="Comonicon's Intermediate Representation for CLIs."
+
+[[project.packages]]
+name="ComoniconTargetExpr"
+description="Comonicon's code generator for native Julia Expr."
+
+[[project.packages]]
+name="ComoniconOptions"
+description="Options for Comonicon Applications."
 
 [[project]]
 name="Expronicon"
-description="""
-"""
+page="expronicon.rogerluo.dev"
+description="The meta-programming standard library for MLStyle."
+
+[[project.packages]]
+name="Expronicon"
+description="the main package for this project."
+
+[[project.packages]]
+name="ExproniconLite"
+description="no fancy pattern matching, no dependencies, lightweight Expronicon for low latency."
 
 [[project]]
 name="Configurations"
-description="""
-"""
+page="configurations.rogerluo.dev"
+description="Options & Configurations made easy."
