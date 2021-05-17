@@ -69,12 +69,11 @@ theme_script = """
         return false
     }
 
-    // if (is_night()) {
-    //     toggle_theme('dark');
-    // } else {
-    //     toggle_theme('light');
-    // }
-    toggle_theme('light');
+    if (is_night()) {
+        toggle_theme('dark');
+    } else {
+        toggle_theme('light');
+    }
 </script>
 """
 
