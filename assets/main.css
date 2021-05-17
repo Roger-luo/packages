@@ -1,0 +1,128 @@
+:root {
+    --background-primary: #121212;
+    --color-primary: #bfbfbf;
+    --color-strong: #d9d9d9;
+    --color-annotation: #b3b3b3;
+    --color-hover: #808080;
+}
+
+html {
+    transition: color 300ms, background-color 300ms;
+    background: var(--background-primary);
+    color: var(--color-primary);
+}
+
+html[data-theme='light'] {
+    --background-primary: #f8f8f8f5;
+    --color-primary: #000000;
+    --color-strong: #000000;
+    --color-annotation: #696666;
+    --color-hover: #8c8c8c;
+}
+
+.page {
+    background-color: var(--background-primary);
+}
+
+.page-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.home {
+    margin-top: 4em;
+}
+
+.home a {
+    color: var(--color-primary);
+    margin-left: 0.1em;
+    font-size: 1.6em;
+    font-weight: 300;
+    border: none;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: var(--color-hover);
+}
+
+.intro {
+    color: var(--color-strong);
+    font-family: Roboto, sans-serif;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.project {
+    color: var(--color-strong);
+    font-family: Roboto, sans-serif;
+    margin-top: 2em;
+}
+
+.project h1 {
+    font-size: 1.4em;
+}
+
+.description {
+    margin: 1em;
+}
+
+.project-page {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.project-page a {
+    color: var(--color-primary);
+    margin-left: 0.1em;
+    font-weight: 300;
+    border: none;
+    text-decoration: none;
+}
+
+.project-page a:hover {
+    color: var(--color-hover);
+}
+
+.pkg {
+    margin-top: 1em;
+}
+
+.pkg-name a {
+    color: var(--color-strong);
+    margin-left: 0.1em;
+    font-weight: 350;
+    border: none;
+    text-decoration: none;
+}
+
+.pkg-desc {
+    font-size: 0.9em;
+    color: var(--color-annotation);
+}
+
+.pkg-name a:hover {
+    color: var(--color-hover);
+}
+
+.pkg-badges a {
+    border: none;
+    text-decoration: none;
+}
+
+.footer-container {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    font-size: 1em;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.footer-container a {
+    color: var(--color-annotation);
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    color: var(--color-hover);
+}
